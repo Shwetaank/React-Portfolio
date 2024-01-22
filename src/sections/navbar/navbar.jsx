@@ -9,7 +9,7 @@ const navbar = () => {
     <nav>
       <div className="container nav__container">
         <a href="index.html" className="nav__logo">
-          <img src={Logo} alt="Shwetank Logo" />
+          <img src={Logo} alt="Logo" />
         </a>
         <ul className="nav__menu">
           {data.map((item) => (

@@ -29,7 +29,7 @@
   --border-radius-2: 0.8rem;
   --border-radius-3: 0.5rem;
 
-  /* General Transition Variable */
+  /* GENERAL TRANSITION VARIABLE */
   --transition: all 500ms ease;
 }
 
@@ -43,14 +43,14 @@ body {
   font-size: 0.9rem;
 }
 
-/* General Container Class */
+/* GENERAL CONTAINER CLASS */
 .container {
   width: var(--container-width-lg);
   margin-inline: auto;
   max-width: 1920px;
 }
 
-/* General Section Styles */
+/* GENERAL SECTION STYLES */
 section {
   padding: 10rem 0;
   background: var(--color-light);
@@ -71,12 +71,23 @@ section > p {
   width: 40%;
 }
 
+/* GENERAL SECTION STYLES */
 a {
   color: var(--color-white);
   transition: var(--transition);
 }
 
-/* General Heading Styles */
+/* GENERAL HEADING STYLES */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  color: var(--color-black);
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -94,21 +105,21 @@ h4 {
 }
 
 h5 {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 h6 {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 
-/* General Image Styles */
-.img {
+/* GENERAL IMAGES STYLES */
+img {
   display: block;
   width: 100%;
   object-fit: cover;
 }
 
-/* General Style for Button */
+/* GENERAL BUTTON STYLES */
 .btn {
   display: inline-block;
   width: fit-content;
@@ -129,8 +140,8 @@ h6 {
   transform: translateY(-0.5rem);
 }
 
-.btn .white {
-  background-color: var(--color-white);
+.btn.white {
+  background: var(--color-white);
 }
 
 .btn.white:hover {
@@ -140,6 +151,7 @@ h6 {
 
 .btn.primary {
   background: var(--color-primary);
+  /* text color always white that's why i didn't use a variable color */
   color: white;
 }
 
@@ -153,7 +165,7 @@ h6 {
   padding: 0.5rem 1.2rem;
 }
 
-/* Media Queries (Tablets) */
+/* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1024px) {
   body {
     font-size: 1rem;
@@ -169,7 +181,7 @@ h6 {
 
   section > p {
     width: 72%;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   h1 {
@@ -177,7 +189,7 @@ h6 {
   }
 }
 
-/* Media Queries (Phones) */
+/* MEDIA QUERIES (phones) */
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 2.4rem;
