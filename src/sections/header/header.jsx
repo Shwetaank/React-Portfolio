@@ -12,19 +12,23 @@ const Header = () => {
         </div>
         <h3>Shwetank Morey</h3>
         <p>
-          Greetings to the vast and dynamic world! I'm
-          <strong> Shwetank Morey</strong>, a seasoned MERN stack developer,
-          ready to weave digital magic in the realm of professional web
-          development. While I dance through the intricacies of MERN, I'm also
-          embarking on a thrilling journey into the cutting-edge landscapes of
-          Web 3.0 as a curious beginner. Simultaneously, I'm mastering the
-          symphony of Data Structures and Algorithms, crafting solutions to
-          intricate problems with finesse. This coding odyssey is not just about
-          lines of code; it's a canvas for innovation, a stage for creativity.
+          "Welcome, <strong> Guest! </strong> I'm{" "}
+          <strong> Shwetank Morey</strong>, a Freelance{" "}
+          <strong>MERN stack developer </strong>
+          venturing into the exciting realm of <strong>Web 3.0</strong>{" "}
+          (Blockchain Technology). Proficient in <strong> DSA </strong>, I
+          intricately craft solutions. 🧩 This coding journey isn't merely about
+          lines of code; it's a journey of innovation, a stage for creativity.
+          🚀 Let's turn ideas into reality! 💡"
         </p>
+
         <div className="header__cta">
-          <a href="#contact" className="btn primary">Let's Talk</a>
-          <a href="#portfolio" className="btn light">My Works</a>
+          <a href="#contact" className="btn primary">
+            Let's Talk
+          </a>
+          <a href="#portfolio" className="btn light">
+            My Works
+          </a>
         </div>
         <div className="header__socials">
           {data.map((item) => (
