@@ -1,34 +1,103 @@
-h3{
+h3 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
 }
 .Services__Skills > p {
- display: flex;
- justify-content: center;
- align-items: center;
- margin-top: 1rem;
- margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.container__services{
+.container__services {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem 4rem;
-
 }
 .card.service {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
 }
-.service__icon{
+.service__icon {
   background: var(--color-primary);
   padding: 0.6rem;
   border-radius: var(--border-radius-3);
   font-size: 1.5rem;
   color: var(--color-white);
   transform: var(--transition);
+  margin-top: 1rem;
+}
+.service:hover .service__icon {
+  background: var(--color-light);
+  color: var(--color-primary);
+}
+.service h4 {
+  margin-bottom: 0.7rem;
+}
 
+.container__skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem 2rem;
+}
+.card.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem ;
+}
+.skills__icon {
+  background: var(--color-primary);
+  padding: 1rem;
+  border-radius:var(--border-radius-3);
+  font-size: 1.8rem;
+  color: var(--color-white);
+  transform: var(--transition);
+  margin-top: 1rem;
+}
+
+.skills:hover .skills__icon {
+  background: var(--color-light);
+  color: var(--color-primary);
+}
+
+.skills h4 {
+  margin-top: 0.8rem;
+}
+
+/* media quries for (TABLET) */
+@media screen and (max-width: 1024px) {
+  .container__services {
+    gap: 1.5rem;
+  }
+  .container__skills {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+/* medua quries for (phones) */
+
+@media screen and (max-width: 600px) {
+  .container__services {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .card.service {
+    gap: 1rem;
+  }
+  .container__skills {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .card.skills {
+    gap: 1rem;
+  }
 }
