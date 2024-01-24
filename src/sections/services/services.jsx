@@ -23,16 +23,15 @@ export const services = () => {
           ))}
         </div>
         <h3> My Skills </h3>
-        <p>Fueled by endless curiosity, I've honed diverse skills <strong>✨🚀 🡇</strong>.</p>
-        <div className="container container_skills">
+        <p>
+          Fueled by endless curiosity, I've honed diverse skills set ✨🚀 🡇
+        </p>
+        <div className="container container__skills">
           {data1.map((item) => (
             <Card key={item.id} className="skills light">
-              <div className="skills_icon">{item.icon}</div>
+              <div className="skills__icon">{item.icon}</div>
               <div className="skills_details">
                 <h4>{item.title}</h4>
-                <p>
-                  <strong>Proficency : </strong> {item.proficiency}
-                </p>
               </div>
             </Card>
           ))}

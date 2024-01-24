@@ -14,6 +14,9 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiMui } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
 import { SiExpress } from "react-icons/si";
+import { SiMariadbfoundation } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiMongodb } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
 import { SiAdobephotoshop } from "react-icons/si";
@@ -24,123 +27,128 @@ import { FaGitAlt } from "react-icons/fa";
 const data1 = [
   {
     id: 1,
-    icon: (
-      <>
-        <AiFillHtml5 />
-        <FaCss3Alt />
-      </>
-    ),
-    title: "HTML5 & CSS3",
-    proficiency: "Intermediate",
+    icon: <AiFillHtml5 />,
+    title: "HTML5",
   },
   {
     id: 2,
-    icon: (
-      <>
-        <IoLogoJavascript />
-        <SiTypescript />
-      </>
-    ),
-    title: "JavaScript & TypeScript",
-    proficiency: "Advanced",
+    icon: <FaCss3Alt />,
+    title: "CSS3",
   },
   {
     id: 3,
-    icon: (
-      <>
-        <FaJava />
-        <FaPython />
-      </>
-    ),
-    title: "Java & Python",
-    proficiency: "Intermediate",
+    icon: <IoLogoJavascript />,
+    title: "javaScript",
   },
   {
     id: 4,
-    icon: <MdComputer />,
-    title: "Data Structures & Algorithms",
-    proficiency: "Intermediate",
+    icon: <SiTypescript />,
+    title: "TypeScript",
+  },
+  {
+    id: 4,
+    icon: <FaJava />,
+    title: "Java",
   },
   {
     id: 5,
-    icon: <FaReact />,
-    title: "ReactJS",
-    proficiency: "Advanced",
+    icon: <FaPython />,
+    title: "Python",
   },
   {
     id: 6,
-    icon: <TbBrandReactNative />,
-    title: "React Native",
-    proficiency: "Advanced",
+    icon: <MdComputer />,
+    title: "DSA",
   },
   {
     id: 7,
-    icon: <SiNextdotjs />,
-    title: "NextJS",
-    proficiency: "Advanced",
+    icon: <FaReact />,
+    title: "React JS",
   },
   {
     id: 8,
-    icon: <SiRedux />,
-    title: "Redux",
-    proficiency: "Intermediate",
+    icon: <TbBrandReactNative />,
+    title: "React Native",
+  },
+  {
+    id: 9,
+    icon: <SiNextdotjs />,
+    title: "Next JS",
   },
   {
     id: 10,
-    icon: (
-      <>
-        <FaBootstrap />
-        <SiTailwindcss />
-        <SiMui />
-      </>
-    ),
-    title: "Bootstrap, Tailwind CSS & MUI",
-    proficiency: "Advanced",
+    icon: <SiRedux />,
+    title: "Redux",
   },
   {
     id: 11,
-    icon: (
-      <>
-        <DiNodejs />
-        <SiExpress />
-      </>
-    ),
-    title: "NodeJS & ExpressJS",
-    proficiency: "Advanced",
+    icon: <FaBootstrap />,
+    title: "BootStrap",
   },
   {
     id: 12,
-    icon: (
-      <>
-        <FaAws />
-        <IoLogoFirebase />
-      </>
-    ),
-    title: "AWS & Firebase",
-    proficiency: "Intermediate",
+    icon: <SiTailwindcss />,
+    title: "Tailwind CSS",
   },
   {
     id: 13,
-    icon: (
-      <>
-        <SiAdobephotoshop />
-        <SiPostman />
-      </>
-    ),
-    title: "Adobe Photoshop & Postman API",
-    proficiency: "Advanced",
+    icon: <SiMui />,
+    title: "Material UI",
   },
   {
     id: 14,
-    icon: (
-      <>
-        <FaLinux />
-        <FaGitAlt />
-      </>
-    ),
-    title: "Linux & Git",
-    proficiency: "Advanced",
+    icon: <DiNodejs />,
+    title: "Node JS",
+  },
+  {
+    id: 15,
+    icon: <SiExpress />,
+    title: "Express JS",
+  },
+  {
+    id: 16,
+    icon: <SiMariadbfoundation />,
+    title: "Maria DB",
+  },
+  {
+    id: 17,
+    icon: <BiLogoPostgresql />,
+    title: "Postgresql",
+  },
+  {
+    id: 18,
+    icon: <SiMongodb />,
+    title: "Mongo DB",
+  },
+  {
+    id: 19,
+    icon: <FaAws />,
+    title: "AWS",
+  },
+  {
+    id: 20,
+    icon: <IoLogoFirebase />,
+    title: "Firebase",
+  },
+  {
+    id: 21,
+    icon: <SiAdobephotoshop />,
+    title: "PhotoShop",
+  },
+  {
+    id: 22,
+    icon: <SiPostman />,
+    title: "Postman",
+  },
+  {
+    id: 23,
+    icon: <FaLinux />,
+    title: "Linux",
+  },
+  {
+    id: "24",
+    icon: <FaGitAlt />,
+    title: "Git",
   },
 ];
-
 export default data1;
