@@ -1,0 +1,44 @@
+#testimonials {
+  padding-bottom: 0;
+}
+
+.swiper {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 3rem;
+  height: fit-content;
+}
+
+.swiper-slide {
+  cursor: grab;
+  transform: translateX(-100%); /* Initial position for the slide effect */
+  transition: transform 0.5s ease-in-out; /* Transition for the slide effect */
+}
+
+.swiper-slide-active {
+  transform: translateX(0%); /* Position for the active slide */
+}
+
+.testimonial__client {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.testimonial__client-avtar {
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  border-radius: var(--border-radius-2);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.swiper-pagination {
+  margin-top: 10rem;
+}
+
+.swiper-pagination-bullet {
+  background: var(--color-primary);
+}
