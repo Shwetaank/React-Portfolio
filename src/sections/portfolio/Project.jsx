@@ -11,7 +11,7 @@ const Project = ({ project }) => {
         </div>
         <h4>{project.title}</h4>
         <h6>
-          <strong>Tech Used:</strong> {project.tech}
+          <strong>Tech Used: </strong>  {project.tech}
         </h6>
         <p>{project.desc}</p>
         <div className="portfolio__project-cta">
