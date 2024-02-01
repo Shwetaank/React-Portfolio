@@ -11,6 +11,7 @@ import Contact from "./sections/contact/contact";
 import Footer from "./sections/footer/footer";
 import FloatingNav from "./sections/floating-nav/floatingNav";
 import Certificates from "./sections/certificates/certificates";
+import Modal from "./components/Modal";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <FAQs />
         <Contact />
         <Footer />
+        <Modal />
         {/* <FloatingNav /> */}
       </main>
     </>
