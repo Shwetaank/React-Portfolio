@@ -11,12 +11,14 @@ import Contact from "./sections/contact/contact";
 import Footer from "./sections/footer/footer";
 import FloatingNav from "./sections/floating-nav/floatingNav";
 import Certificates from "./sections/certificates/certificates";
-import Modal from "./components/Modal";
+import Theme from "./theme/Theme";
+import { useThemeContext } from "./context/theme-context";
 
 const App = () => {
+  const { themeState } = useThemeContext();
   return (
     <>
-      <main>
+      <main className={`${themeState.primary} ${themeState.background}`}>
         <Navbar />
         <Header />
         <About />
@@ -28,7 +30,7 @@ const App = () => {
         <FAQs />
         <Contact />
         <Footer />
-        <Modal />
+        <Theme />
         {/* <FloatingNav /> */}
       </main>
     </>
