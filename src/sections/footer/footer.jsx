@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
       <div className="footer__copyright">
         <small>
-          2024 Sin_Greed. &copy; All Rights Reserved. <br />
+          <strong> Sin_Greed.</strong> 2024 &copy; All Rights Reserved. <br />
           Infused with <FaHeart />.
         </small>
       </div>

@@ -1,10 +1,12 @@
-import React from "react";
 import Logo from "../../assets/logo.jpg";
 import data from "./data";
 import { IoColorPaletteSharp } from "react-icons/io5";
+import { useModalContext } from '../../context/modal-context';
 import "./navbar.css";
 
-const navbar = () => {
+const Navbar = () => { // Corrected: Change 'navbar' to 'Navbar'
+  const { showModalHandler } = useModalContext();
+  
   return (
     <nav>
       <div className="container nav__container">
@@ -19,7 +21,7 @@ const navbar = () => {
           ))}
         </ul>
 
-        <button id="theme__icon">
+        <button id="theme__icon" onClick={showModalHandler}>
           <IoColorPaletteSharp />
         </button>
       </div>
@@ -27,4 +29,5 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar; // Corrected: Change 'navbar' to 'Navbar'
+

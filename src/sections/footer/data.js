@@ -6,6 +6,7 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 import { SiLeetcode } from "react-icons/si";
+import { FaYoutube } from "react-icons/fa";
 
 export const links = [
   { id: 1, link: "#", title: "Home" },
@@ -47,5 +48,10 @@ export const socials = [
     id: 6,
     link: "https://leetcode.com/spmorey87/",
     icon: <SiLeetcode />,
+  },
+  {
+    id:7,
+    link:"https://www.youtube.com/channel/UCxeMVxRuPquLErqmFH2Q5RA",
+    icon: <FaYoutube />,
   },
 ];
