@@ -48,12 +48,7 @@ const about = () => {
               details by exploring my
               <strong> resume </strong> below.
             </p>
-            <a
-              href={CV}
-              download
-              className="btn primary"
-              data-aos="fade-up-left"
-            >
+            <a href={CV} download className="btn primary" data-aos="fade-left">
               Download CV <HiDownload />
             </a>
           </div>
