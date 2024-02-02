@@ -9,7 +9,7 @@ import "./about.css";
 const about = () => {
   return (
     <>
-      <section id="about">
+      <section id="about" data-aos="fade-up">
         <div className="container about__container">
           <div className="about__left">
             <div className="about__portrait">
@@ -48,7 +48,12 @@ const about = () => {
               details by exploring my
               <strong> resume </strong> below.
             </p>
-            <a href={CV} download className="btn primary">
+            <a
+              href={CV}
+              download
+              className="btn primary"
+              data-aos="fade-up-left"
+            >
               Download CV <HiDownload />
             </a>
           </div>
