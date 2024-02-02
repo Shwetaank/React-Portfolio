@@ -18,9 +18,10 @@ const Footer = () => {
           {socials.map((socail) => (
             <a
               key={socail.id}
-              href={socail.link} // Fix here, it should be socail.link
+              href={socail.link}
               target="_blank"
               rel="noopener noreferrer"
+              data-aos="fade-up"
             >
               {socail.icon}
             </a>
