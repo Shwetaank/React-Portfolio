@@ -29,8 +29,7 @@ const Header = () => {
 
         <div
           className="header__cta"
-          data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos="fade-in"
         >
           <a href="#contact" className="btn primary">
             Let's Talk

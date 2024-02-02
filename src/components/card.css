@@ -4,7 +4,7 @@
   border: 2px solid transparent;
   border-radius: var(--border-radius-1);
   transition: var(--transition);
-  box-shadow: -2px -2px 8px var(--color-primary); 
+  box-shadow: -5px -1px 6px var(--color-primary); 
 }
 
 .card:hover {
