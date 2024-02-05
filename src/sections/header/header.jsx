@@ -26,11 +26,7 @@ const Header = () => {
           lines of code; it's a journey of innovation, a stage for creativity.
           🚀 Let's turn ideas into reality! 💡"
         </p>
-
-        <div
-          className="header__cta"
-          data-aos="fade-in"
-        >
+        <div className="header__cta" data-aos="zoom-in">
           <a href="#contact" className="btn primary">
             Let's Talk
           </a>

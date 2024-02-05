@@ -1,12 +1,12 @@
 import Logo from "../../assets/logo.jpg";
 import data from "./data";
 import { IoColorPaletteSharp } from "react-icons/io5";
-import { useModalContext } from '../../context/modal-context';
+import { useModalContext } from "../../context/modal-context";
 import "./navbar.css";
 
-const Navbar = () => { // Corrected: Change 'navbar' to 'Navbar'
+const Navbar = () => {
   const { showModalHandler } = useModalContext();
-  
+
   return (
     <nav>
       <div className="container nav__container">
@@ -29,5 +29,4 @@ const Navbar = () => { // Corrected: Change 'navbar' to 'Navbar'
   );
 };
 
-export default Navbar; // Corrected: Change 'navbar' to 'Navbar'
-
+export default Navbar;

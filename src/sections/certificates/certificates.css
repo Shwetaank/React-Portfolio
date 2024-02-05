@@ -1,0 +1,226 @@
+/* Styles for the main container holding left and right sections */
+.school__container {
+  display: grid;
+  grid-template-columns: 35% 53%;
+  gap: 12rem;
+  padding: 2rem;
+}
+
+/* Styles for the portrait image */
+.school__portrait {
+  width: 30rem;
+  height: fit-content;
+  max-height: 50rem;
+  border: 1rem solid var(--color-light);
+  transition: var(--transition);
+  border-radius: 8%;
+  overflow: hidden;
+  margin-top: 10rem;
+}
+/* Hover effect for the portrait image */
+.school__portrait:hover {
+  border-width: 0;
+}
+
+.school__portrait > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for the grid of cards */
+.school__cards {
+  margin: 2rem 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 1.5rem;
+}
+
+/* Styles for individual cards */
+.school__card {
+  text-align: center;
+  padding: 1rem;
+  background: var(--color-light);
+}
+.school__card-icon {
+  font-size: 2rem;
+  color: var(--color-black);
+  border-radius: var(--border-radius-3);
+  width: fit-content;
+  margin-inline: auto;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+  margin-bottom: 0.8rem;
+}
+
+/* Change icon styles on hover for each card */
+.school__card:hover .school__card-icon {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.school__card p {
+  padding-left: 2rem;
+  margin-top: 0.5rem;
+}
+.school__card > strong > small > a {
+  font-size: 1rem;
+  color: var(--color-black);
+  display: flex;
+  justify-content: end;
+  text-align: right;
+  object-fit: cover;
+  text-decoration: none;
+}
+.school__card > strong > small > a:hover {
+  color: var(--color-primary);
+  text-decoration-line: underline;
+}
+
+.school__card_date-card {
+  font-size: 1.5rem;
+  color: var(--color-black);
+  border-radius: var(--border-radius-3);
+  width: fit-content;
+  margin-inline-start: auto;
+  padding: 0.6rem;
+}
+
+/* Styles for the container holding certification cards */
+.certification__container {
+  margin-top: 1.5rem;
+}
+.certification__container > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  text-align: justify;
+}
+
+/* styles for the container certification cards */
+.certificate__cards {
+  margin: 2rem 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.certificate__card {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
+  background: var(--color-light);
+}
+
+.certificate__image {
+  width: 100%;
+  height: fit-content;
+  min-height: 7rem;
+  max-height: 15rem;
+  background: var(--color-light);
+  border-radius: var(--border-radius-2);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.certificate__card-icon {
+  font-size: 2rem;
+  color: var(--color-black);
+  border-radius: var(--border-radius-3);
+  width: fit-content;
+  margin-inline: auto;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+  margin-bottom: 0.8rem;
+}
+.certificate__card:hover .certificate__card-icon {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+.certificate__card h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.6rem;
+}
+.certificate__card p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding-bottom: 0.6rem;
+}
+.certificate__card a {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-black);
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  object-fit: cover;
+}
+.certificate__card a:hover {
+  color: var(--color-primary);
+  text-decoration-line: underline;
+}
+
+.certificate__card .btn {
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: var(--transition);
+  margin-top: auto;
+  margin-left: 50%;
+}
+
+.certificate__card .btn:hover {
+  color: var(--color-primary);
+  text-decoration-line: underline;
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 1024px) {
+  /* Hide left school image on tablet */
+  .school__left {
+    display: none;
+  }
+  /* Adjust the layout for the container on tablets */
+  .school__container {
+    grid-template-columns: 1fr;
+  }
+  .certificate__cards {
+    margin: 0.5rem 0 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+/* Media query for phones */
+@media screen and (max-width: 600px) {
+  .school__cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .school__card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .school__card > strong > small > a {
+    margin-top: 1rem;
+  }
+  .certificate__cards {
+    grid-template-columns: 1fr;
+  }
+}

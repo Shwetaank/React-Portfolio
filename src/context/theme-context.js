@@ -12,17 +12,22 @@ export const ThemeProvider = ({ children }) => {
     themeReducer,
     initialThemeState
   );
+
   const themeHandler = (buttonClassName) => {
     dispatchTheme({ type: buttonClassName });
   };
-  //save theme settings to the local storage
-  useEffect(
-    () => {
+
+  // Save theme settings to the local storage
+  useEffect(() => {
+    const saveThemeSettings = () => {
       localStorage.setItem("themeSettings", JSON.stringify(themeState));
-    },
-    [themeState.primary, themeState.background],
-    themeState
-  );
+    };
+
+    saveThemeSettings();  // Call the function directly
+
+    // Include themeState in the dependency array
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [themeState.primary, themeState.background]);
 
   return (
     <ThemeContext.Provider value={{ themeState, themeHandler }}>
@@ -31,8 +36,8 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
-// custom hook to use our theme context wherevert we want in project
-
+// Custom hook to use our theme context wherever we want in the project
 export const useThemeContext = () => {
   return useContext(ThemeContext);
 };
+
