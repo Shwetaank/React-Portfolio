@@ -69,7 +69,7 @@
   font-size: 1rem;
   color: var(--color-black);
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   text-align: right;
   object-fit: cover;
   text-decoration: none;
@@ -135,6 +135,7 @@
   border-radius: var(--border-radius-3);
   width: fit-content;
   margin-inline: auto;
+
   padding: 0.6rem;
   display: flex;
   align-items: center;
@@ -163,7 +164,7 @@
   font-weight: bold;
   color: var(--color-black);
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   text-align: center;
   object-fit: cover;
 }
