@@ -44,7 +44,7 @@ const Certificates = () => {
                       <FaCodeBranch /> --{item.branch}
                     </strong>
                   </p>
-                  <strong>
+                  <strong className="school__card_date-card">
                     {item.Year}
                     <small>
                       <a
@@ -52,7 +52,7 @@ const Certificates = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <strong>Visit Site</strong>
+                        <strong>Visit</strong>
                       </a>
                     </small>
                   </strong>
@@ -63,7 +63,11 @@ const Certificates = () => {
         </div>
         {/* Certificates section */}
         <h3>Certificates</h3>
-        <div className="container certification__container" data-aos="zoom-in">
+        <div
+          className="container certification__container"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
           <p>
             Each course is a stepping stone in my journey, equipping me with a
             versatile skill set to tackle real-world challenges in the dynamic

@@ -22,24 +22,32 @@
   border-width: 0;
 }
 
-.school__portrait > h3 {
+.school__card h5 {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: medium;
+  margin-bottom: 0.5rem;
+}
+.school__card h5:hover {
+  font-size: x-large;
+  text-decoration: underline;
+  transition: var(--transition);
+  color: var(--color-primary);
 }
 
 /* Styles for the grid of cards */
 .school__cards {
   margin: 2rem 0 1rem;
   display: grid;
-  grid-template-columns: repeat(1fr);
-  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
 /* Styles for individual cards */
 .school__card {
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
   background: var(--color-light);
 }
 .school__card-icon {
@@ -62,8 +70,9 @@
 }
 
 .school__card p {
-  padding-left: 2rem;
+  font-size: 1rem;
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .school__card > strong > small > a {
   font-size: 1rem;
@@ -77,26 +86,24 @@
 .school__card > strong > small > a:hover {
   color: var(--color-primary);
   text-decoration-line: underline;
+  font-size: 1.2rem;
+  margin-right: 1rem;
 }
 
 .school__card_date-card {
-  font-size: 1.5rem;
   color: var(--color-black);
-  border-radius: var(--border-radius-3);
   width: fit-content;
-  margin-inline-start: auto;
-  padding: 0.6rem;
 }
 
 /* Styles for the container holding certification cards */
 .certification__container {
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
 .certification__container > p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   padding: 0.5rem;
   text-align: justify;
 }
@@ -114,7 +121,7 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem;
   background: var(--color-light);
 }
 
@@ -135,7 +142,6 @@
   border-radius: var(--border-radius-3);
   width: fit-content;
   margin-inline: auto;
-
   padding: 0.6rem;
   display: flex;
   align-items: center;
@@ -145,6 +151,8 @@
 .certificate__card:hover .certificate__card-icon {
   background: var(--color-primary);
   color: var(--color-white);
+  transition: var(--transition);
+  font-size: 2.5rem;
 }
 .certificate__card h5 {
   display: flex;
@@ -166,7 +174,6 @@
   display: flex;
   justify-content: flex-end;
   text-align: center;
-  object-fit: cover;
 }
 .certificate__card a:hover {
   color: var(--color-primary);
@@ -175,7 +182,6 @@
 
 .certificate__card .btn {
   font-size: 0.9rem;
-  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
