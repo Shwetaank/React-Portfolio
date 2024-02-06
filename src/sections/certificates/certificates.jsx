@@ -12,13 +12,17 @@ import data1 from "./data1";
 import Card from "../../components/card";
 
 const Certificates = () => {
+  // Initialize AOS library
   useEffect(() => {
     AOS.init();
   }, []);
+
   return (
     <>
+      {/* Education and Certification section */}
       <section id="Certificates" data-aos="fade-up">
-        <h2>Education & Certification </h2>
+        {/* Education section */}
+        <h2>Education & Certification</h2>
         <h3>Education</h3>
         <div className="container school__container">
           <div className="school__left" data-aos="fade-right">
@@ -28,6 +32,7 @@ const Certificates = () => {
           </div>
           <div className="school__right" data-aos="fade-left">
             <div className="school__cards">
+              {/* Render education cards */}
               {data.map((item) => (
                 <Card key={item.id} className="school__card">
                   <span className="school__card-icon">
@@ -39,7 +44,7 @@ const Certificates = () => {
                       <FaCodeBranch /> --{item.branch}
                     </strong>
                   </p>
-                  <strong>
+                  <strong className="school__card_date-card">
                     {item.Year}
                     <small>
                       <a
@@ -47,7 +52,7 @@ const Certificates = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <strong>Visit Site</strong>
+                        <strong>Visit</strong>
                       </a>
                     </small>
                   </strong>
@@ -56,8 +61,13 @@ const Certificates = () => {
             </div>
           </div>
         </div>
+        {/* Certificates section */}
         <h3>Certificates</h3>
-        <div className="container certification__container" data-aos="zoom-in">
+        <div
+          className="container certification__container"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
           <p>
             Each course is a stepping stone in my journey, equipping me with a
             versatile skill set to tackle real-world challenges in the dynamic
@@ -65,6 +75,7 @@ const Certificates = () => {
             🚀🎓
           </p>
           <div className="certificate__cards">
+            {/* Render certificate cards */}
             {data1.map((item) => (
               <Card key={item.id} className="certificate__card">
                 <strong className="certificate__card-icon">

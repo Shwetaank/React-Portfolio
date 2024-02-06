@@ -7,14 +7,19 @@ const data = [
     id: 1,
     icon: <FaAward />,
     title: "Experience",
-    desc: "5+ months of freelancing working",
+    desc: "5+ months of freelancing experience",
   },
-  { id: 2, icon: <TbBook />, title: "Projects", desc: "15+ Completed" },
+  {
+    id: 2,
+    icon: <TbBook />,
+    title: "Projects",
+    desc: "Successfully completed over 15 projects",
+  },
   {
     id: 3,
     icon: <BiHappyHeartEyes />,
-    title: "Client's",
-    desc: "5+ happy Clients",
+    title: "Clients",
+    desc: "Delighted more than 5 clients with outstanding results",
   },
 ];
 

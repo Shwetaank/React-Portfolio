@@ -24,9 +24,21 @@ const data = [
     link: "https://www.instagram.com/shwetaank_/",
     icon: <AiOutlineInstagram />,
   },
-  { id: 4, link: "https://twitter.com/Spmorey87G", icon: <AiOutlineTwitter /> },
-  { id: 5, link: "https://github.com/Shwetaank", icon: <AiOutlineGithub /> },
-  { id: 6, link: "https://leetcode.com/spmorey87/", icon: <SiLeetcode /> },
+  {
+    id: 4,
+    link: "https://twitter.com/Spmorey87G",
+    icon: <AiOutlineTwitter />,
+  },
+  {
+    id: 5,
+    link: "https://github.com/Shwetaank",
+    icon: <AiOutlineGithub />,
+  },
+  {
+    id: 6,
+    link: "https://leetcode.com/spmorey87/",
+    icon: <SiLeetcode />,
+  },
   {
     id: 7,
     link: "https://www.youtube.com/channel/UCxeMVxRuPquLErqmFH2Q5RA",

@@ -1,3 +1,4 @@
+/* Header styles */
 header {
   margin-top: 5rem;
   height: calc(100vh - 5rem);
@@ -6,67 +7,76 @@ header {
   background: var(--color-white);
   transition: var(--transition);
 }
+
+/* Container styles */
 .header__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  /* background: green; */
 }
 
+/* Profile image styles */
 .header__profile {
-  width: 28rem;
+  width: 26rem;
   height: 30rem;
   border-radius: 12rem 12rem 2rem 2rem;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
+/* Paragraph styles */
 .header__container p {
   width: 80%;
   text-align: center;
+  text-align: justify;
   margin: 1rem 0 2rem;
 }
 
+/* Call to action styles */
 .header__cta {
   display: flex;
   align-items: center;
   gap: 2rem;
-
 }
 
+/* Social media links styles */
 .header__socials {
   position: absolute;
   left: 0;
   bottom: 0;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
-  margin-bottom: 2rem;
+  gap: 1.8rem;
+  margin-bottom: 4rem;
 }
 
+/* Individual social media link styles */
 .header__socials a {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
   background: var(--color-light);
   color: var(--color-black);
   display: grid;
   place-items: center;
   border-radius: var(--border-radius-3);
-  box-shadow: -2px -2px 10px var(--color-primary); /*box shadow */
-
+  box-shadow: -2px -2px 10px var(--color-primary); 
 }
+
+/* Hover effect for social media links */
 .header__socials a:hover {
   background: var(--color-primary);
   color: var(--color-white);
   transform: translateX(-0.5rem);
 }
 
-a.light{
+/* Light link styles */
+a.light {
   box-shadow: -2px -2px 10px var(--color-primary);
 }
-/* media queries(tablet) */
 
+/* Media queries for tablets */
 @media screen and (max-width: 1024px) {
   header {
     margin-top: 0;
@@ -74,7 +84,7 @@ a.light{
   }
 }
 
-/* media queries (phones) */
+/* Media queries for phones */
 @media screen and (max-width: 600px) {
   .header__profile {
     width: 14rem;

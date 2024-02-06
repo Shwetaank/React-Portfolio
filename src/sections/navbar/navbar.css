@@ -1,3 +1,4 @@
+/* Styling for the navigation */
 nav {
   width: 100vw;
   height: 5rem;
@@ -12,27 +13,33 @@ nav {
   transition: var(--transition);
 }
 
+/* Styling for the navigation container */
 .nav__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Styling for the logo */
 .nav__logo {
-  width: 2.5rem;
+  width: 2.7rem;
   border-radius: 50%;
   overflow: hidden;
 }
 
+/* Styling for the menu */
 .nav__menu {
+  font-size: medium;
   display: flex;
   gap: 3.5rem;
 }
 
-.nav__menu a{
+/* Styling for menu links */
+.nav__menu a {
   color: white;
 }
 
+/* Styling for the theme icon button */
 #theme__icon {
   background: transparent;
   color: white;
@@ -40,9 +47,14 @@ nav {
   cursor: pointer;
 }
 
-/* HIDE NAV MENU ON TABLETS AND PHONES */
+/* Hide nav menu on tablets and phones */
 @media screen and (max-width: 1024px) {
   .nav__menu {
-      display: none;
+    display: none;
+  }
+  .nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
