@@ -1,28 +1,36 @@
-h3 {
+/* Styles for services section main container */
+.services__main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  flex-direction: column;
+  padding: 2rem;
 }
-.Services__Skills > p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
+
+/* Styles for paragraphs inside services section */
+.services__main p {
+  text-align: justify;
+  margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
 
-.container__services {
+/* Styles for cards container */
+.services__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem 4rem;
+  margin-bottom: 2rem;
 }
-.card.service {
+
+/* Styles for individual service cards */
+.services__card {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
 }
-.service__icon {
+
+/* Styles for service icons */
+.services__icon {
   background: var(--color-primary);
   padding: 0.6rem;
   border-radius: var(--border-radius-3);
@@ -31,73 +39,121 @@ h3 {
   transform: var(--transition);
   margin-top: 1rem;
 }
-.service:hover .service__icon {
+
+/* Hover styles for service icons */
+.services__card:hover .services__icon {
   background: var(--color-light);
   color: var(--color-primary);
 }
-.service h4 {
+
+/* Styles for service title */
+.container__services h4 {
   margin-bottom: 0.7rem;
 }
 
-.container__skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 3rem 3rem;
+/* Hover styles for service title */
+.container__services h4:hover {
+  transition: var(--transition);
+  font-size: x-large;
+  color: var(--color-primary);
+  text-decoration: underline;
 }
-.card.skills {
+
+/* Styles for paragraphs inside services container */
+.container__services p {
+  text-align: justify;
+}
+
+/* Styles for skills section main container */
+.skills__main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 1rem ;
+  padding: 2rem;
 }
+
+/* Styles for paragraphs inside skills section */
+.skills__main p {
+  text-align: justify;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Styles for skills cards container */
+.skills__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 4rem 4rem;
+}
+
+/* Styles for individual skill cards */
+.skills__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.4rem;
+}
+
+/* Styles for skill icons */
 .skills__icon {
   background: var(--color-primary);
-  padding: 1rem;
-  border-radius:var(--border-radius-3);
-  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: var(--border-radius-3);
+  font-size: 2rem;
   color: var(--color-white);
-  transform: var(--transition);
-  margin-top: 1rem;
+  transition: var(--transition);
+  margin: 0.5rem;
 }
 
-.skills:hover .skills__icon {
+/* Hover styles for skill icons */
+.skills__card:hover .skills__icon {
+  transition: var(--transition);
   background: var(--color-light);
   color: var(--color-primary);
+  font-size: 3rem;
 }
 
-.skills h4 {
-  margin-top: 0.8rem;
+/* Styles for skill title */
+.skills__details h4 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-/* media quries for (TABLET) */
+/* Hover styles for skill title */
+.skills__details h4:hover {
+  transition: var(--transition);
+  color: var(--color-primary);
+  text-decoration: underline;
+  font-size: 1.3rem;
+}
+
+/* Media queries for tablet screens */
 @media screen and (max-width: 1024px) {
-  .container__services {
-    gap: 1.5rem;
+  .services__cards {
+    gap: 2rem 2rem;
   }
-  .container__skills {
+  .skills__cards {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 3rem 3rem;
   }
 }
 
-/* medua quries for (phones) */
-
+/* Media queries for phones */
 @media screen and (max-width: 600px) {
-  .container__services {
+  .services__cards {
     grid-template-columns: 1fr;
-    gap: 1.2rem;
+    gap: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
-
-  .card.service {
-    gap: 1rem;
-  }
-  .container__skills {
+  .skills__cards {
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .card.skills {
-    gap: 1rem;
+    gap: 2rem 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
