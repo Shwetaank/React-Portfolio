@@ -22,14 +22,15 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio">
-      <h2>Recent Projects</h2>
-      <p>
-        "🚀 Explore the future of software innovation with our latest project!
-        🔥 Revolutionizing tech and design, it's a journey into limitless
-        possibilities. Don't miss out – dive in below! 🌐✨"
-      </p>
+    <section id="portfolio" data-aos="fade-in">
+      <h2> My Recent Projects</h2>
       <div className="container portfolio__container">
+        <p>
+          🚀 Dive into the thrilling world of software innovation with our
+          latest project! Revolutionizing tech and design, it's a captivating
+          journey into <strong>limitless possibilities</strong>. Don't miss out
+          – explore below and <strong>discover the magic</strong>! 🌐✨
+        </p>
         <ProjectCategories
           categories={uniqueCategories}
           onFilterProjects={filterProjectHandler}
