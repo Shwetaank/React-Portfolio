@@ -33,7 +33,7 @@ const data1 = [
   {
     id: 3,
     icon: <IoLogoJavascript />,
-    title: "javaScript",
+    title: "JavaScript",
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ const data1 = [
   {
     id: 7,
     icon: <FaReact />,
-    title: "React JS",
+    title: "React.js",
   },
   {
     id: 8,
@@ -63,7 +63,7 @@ const data1 = [
   {
     id: 9,
     icon: <SiNextdotjs />,
-    title: "Next JS",
+    title: "Next.js",
   },
   {
     id: 10,
@@ -73,7 +73,7 @@ const data1 = [
   {
     id: 11,
     icon: <FaBootstrap />,
-    title: "BootStrap",
+    title: "Bootstrap",
   },
   {
     id: 12,
@@ -88,22 +88,22 @@ const data1 = [
   {
     id: 14,
     icon: <DiNodejs />,
-    title: "Node JS",
+    title: "Node.js",
   },
   {
     id: 15,
     icon: <SiExpress />,
-    title: "Express JS",
+    title: "Express.js",
   },
   {
     id: 16,
     icon: <SiMariadbfoundation />,
-    title: "Maria DB",
+    title: "MariaDB",
   },
   {
     id: 17,
     icon: <SiMongodb />,
-    title: "Mongo DB",
+    title: "MongoDB",
   },
   {
     id: 18,
@@ -113,7 +113,7 @@ const data1 = [
   {
     id: 19,
     icon: <SiAdobephotoshop />,
-    title: "PhotoShop",
+    title: "Photoshop",
   },
   {
     id: 20,
