@@ -42,6 +42,8 @@
 
 /* Hover styles for service icons */
 .services__card:hover .services__icon {
+  font-size: 2rem;
+  transition: var(--transition);
   background: var(--color-light);
   color: var(--color-primary);
 }
