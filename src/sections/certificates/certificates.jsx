@@ -20,10 +20,10 @@ const Certificates = () => {
   return (
     <>
       {/* Education and Certification section */}
-      <section id="Certificates" data-aos="fade-up">
+      <section id="Certificates" data-aos="fade-in">
         {/* Education section */}
         <h2>Education & Certification</h2>
-        <h3>Education</h3>
+        <h3 data-aos="zoom-in">Education</h3>
         <div className="container school__container">
           <div className="school__left" data-aos="fade-right">
             <div className="school__portrait">
@@ -35,10 +35,10 @@ const Certificates = () => {
               {/* Render education cards */}
               {data.map((item) => (
                 <Card key={item.id} className="school__card">
-                  <span className="school__card-icon">
+                  <span className="school__card-icon" data-aos="flip-up">
                     <LiaUniversitySolid />
                   </span>
-                  <h5>{item.Uni}</h5>
+                  <h5 data-aos="zoom-in">{item.Uni}</h5>
                   <p>
                     <strong>
                       <FaCodeBranch /> --{item.branch}
@@ -62,31 +62,28 @@ const Certificates = () => {
           </div>
         </div>
         {/* Certificates section */}
-        <h3>Certificates</h3>
-        <div
-          className="container certification__container"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-        >
+        <h3 data-aos="zoom-in">Certificates</h3>
+        <div className="container certification__container">
           <p>
             Each course is a stepping stone in my journey, equipping me with a
             versatile skill set to tackle real-world challenges in the dynamic
             landscape of technology. 🌐💡 Ready for the next exciting chapter!
             🚀🎓
           </p>
-          <div className="certificate__cards">
+          <div className="certificate__cards" data-aos="fade-up">
             {/* Render certificate cards */}
             {data1.map((item) => (
               <Card key={item.id} className="certificate__card">
-                <strong className="certificate__card-icon">
+                <strong className="certificate__card-icon" data-aos="flip-up">
                   <GrCertificate />
                 </strong>
                 <img
                   src={item.Img}
                   alt="Certificate of Imagae"
                   className="certificate__image"
+                  data-aos="flip-down"
                 />
-                <h5>{item.tittle}</h5>
+                <h5>{item.title}</h5>
                 <p>{item.desc}</p>
                 <a
                   href={item.link}
