@@ -23,7 +23,14 @@ const about = () => {
               {/* Mapping through data to render cards */}
               {data.map((item) => (
                 <Card key={item.id} className="about__card">
-                  <span className="about__card-icon">{item.icon}</span>
+                  <span
+                    className="about__card-icon"
+                    data-aos="flip-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="3000"
+                  >
+                    {item.icon}
+                  </span>
                   <h5>{item.title}</h5>
                   <small>{item.desc}</small>
                 </Card>
@@ -32,13 +39,16 @@ const about = () => {
             {/* Main introduction */}
             <p data-aos="fade-up">
               "Empower your digital vision with a touch of magic! ✨ Whether you
-              envision a sleek website, a dynamic e-commerce platform, a
-              standout portfolio, or even cutting-edge blockchain apps, I'm here
-              to make it happen. 🚀 Let's collaboratively craft an online
-              experience that not only speaks volumes but leaves a lasting
-              impression. 🎨 Elevate your brand with seamless, responsive, and
-              stunning web solutions. 🌐 Your journey towards digital excellence
-              begins here! 🌟"
+              envision{" "}
+              <strong>
+                a sleek website, a dynamic e-commerce platform, a standout
+                portfolio, or even cutting-edge blockchain apps
+              </strong>
+              , I'm here to make it happen. 🚀 Let's collaboratively craft an
+              online experience that not only speaks volumes but leaves a
+              lasting impression. 🎨 Elevate your brand with seamless,
+              responsive, and stunning web solutions. 🌐 Your journey towards
+              digital excellence begins here! 🌟"
             </p>
             <p data-aos="fade-up">
               Greetings, I'm <strong> Shwetank Morey </strong>, a dedicated 🎓

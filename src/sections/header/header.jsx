@@ -14,13 +14,12 @@ const Header = () => {
 
   // Render header component
   return (
-    <header id="header">
+    <header id="header" data-aos="fade-in">
       <div className="container header__container">
         {/* Profile image */}
-        <div className="header__profile" data-aos="flip-up">
+        <div className="header__profile" data-aos="fade-in">
           <img src={HeaderImage} alt="Header Portrait" />
         </div>
-
         {/* Header text */}
         <h3 data-aos="fade-up">Shwetank Morey</h3>
         <p data-aos="fade-up">
@@ -46,6 +45,7 @@ const Header = () => {
         <div className="header__socials" data-aos="fade-right">
           {data.map((item) => (
             <a
+              data-aos="flip-up"
               key={item.id}
               href={item.link}
               target="_blank"

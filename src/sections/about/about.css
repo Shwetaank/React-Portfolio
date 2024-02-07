@@ -32,6 +32,7 @@
 /* Styles for individual cards */
 .about__card {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -41,7 +42,7 @@ h2 {
 }
 /* Styles for the icon within each card */
 .about__card-icon {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: var(--color-black);
   border-radius: var(--border-radius-3);
   width: fit-content;
@@ -54,6 +55,8 @@ h2 {
 
 /* Change icon styles on hover for each card */
 .about__card:hover .about__card-icon {
+  font-size: 2rem;
+  transition: var(--transition);
   background: var(--color-primary);
   color: var(--color-white);
 }
@@ -61,6 +64,14 @@ h2 {
 /* Styles for the title within each card */
 .about__card h5 {
   margin: 1rem 0;
+}
+
+/* Styles for small text within each card */
+.about__card small {
+  display: inline-block;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
 }
 
 /* Styles for the right section containing text and button */
@@ -94,7 +105,7 @@ h2 {
 @media screen and (max-width: 600px) {
   /* Adjust the grid layout for cards on phones */
   .about__cards {
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
   /* Adjust the top margin for the button on phones */
