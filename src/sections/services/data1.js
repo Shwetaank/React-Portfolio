@@ -1,7 +1,7 @@
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaCss3Alt } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiTypescript } from "react-icons/si";
+import { TbBrandJavascript } from "react-icons/tb";
+import { TbBrandTypescript } from "react-icons/tb";
 import { FaJava } from "react-icons/fa";
 import { MdComputer } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
@@ -16,7 +16,7 @@ import { SiExpress } from "react-icons/si";
 import { SiMariadbfoundation } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
-import { SiAdobephotoshop } from "react-icons/si";
+import { DiPhotoshop } from "react-icons/di";
 import { FaGitAlt } from "react-icons/fa";
 
 const data1 = [
@@ -32,12 +32,12 @@ const data1 = [
   },
   {
     id: 3,
-    icon: <IoLogoJavascript />,
+    icon: <TbBrandJavascript />,
     title: "JavaScript",
   },
   {
     id: 4,
-    icon: <SiTypescript />,
+    icon: <TbBrandTypescript />,
     title: "TypeScript",
   },
   {
@@ -112,7 +112,7 @@ const data1 = [
   },
   {
     id: 19,
-    icon: <SiAdobephotoshop />,
+    icon: <DiPhotoshop />,
     title: "Photoshop",
   },
   {
