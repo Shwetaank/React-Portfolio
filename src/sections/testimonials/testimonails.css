@@ -1,7 +1,15 @@
+/* Styling for the testimonials section */
 #testimonials {
   padding-bottom: 0;
 }
 
+.container__swiper > p {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+/* Styling for the Swiper container */
 .swiper {
   padding-top: 1rem;
   padding-left: 1rem;
@@ -10,23 +18,32 @@
   height: fit-content;
 }
 
+/* Styling for individual Swiper slides */
 .swiper-slide {
   cursor: grab;
-  transform: translateX(-100%); /* Initial position for the slide effect */
-  transition: transform 0.5s ease-in-out; /* Transition for the slide effect */
+  /* Initial position for the slide effect */
+  transform: translateX(-100%);
+  /* Transition for the slide effect */
+  transition: transform 0.5s ease-in-out;
 }
 
+/* Styling for the active Swiper slide */
 .swiper-slide-active {
-  transform: translateX(0%); /* Position for the active slide */
+  /* Position for the active slide */
+  transform: translateX(0%);
 }
 
+/* Styling for the client testimonial section */
 .testimonial__client {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  gap: 2rem;
+  margin-top: 1rem;
 }
-
+.testimonial__quote {
+  text-align: justify;
+}
+/* Styling for the testimonial client avatar */
 .testimonial__client-avtar {
   width: 2.5rem;
   aspect-ratio: 1/1;
@@ -35,10 +52,18 @@
   transition: var(--transition);
 }
 
+/* Styling for the Swiper pagination */
 .swiper-pagination {
   margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
+/* Styling for the Swiper pagination bullets */
 .swiper-pagination-bullet {
   background: var(--color-primary);
+  width: 1rem;
+  height: 1rem;
 }
