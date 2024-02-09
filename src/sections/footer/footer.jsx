@@ -1,27 +1,26 @@
-import React from "react";
 import { FaHeart } from "react-icons/fa";
 import { links, socials } from "./data";
 import "./footer.css";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="container footer__contyainer">
-        <ul className="nav__menu">
+    <footer data-aos="fade-in">
+      <div className="container footer__container">
+        <ul className="nav__menu" data-aos="zoom-in">
           {links.map((fLink) => (
             <li key={fLink.id}>
               <a href={fLink.link}> {fLink.title}</a>
             </li>
           ))}
         </ul>
-        <div className="footer__socials">
+        <div className="footer__socials" data-aos="fade-up">
           {socials.map((socail) => (
             <a
               key={socail.id}
               href={socail.link}
               target="_blank"
               rel="noopener noreferrer"
-              data-aos="fade-up"
+              data-aos="flip-up"
             >
               {socail.icon}
             </a>
