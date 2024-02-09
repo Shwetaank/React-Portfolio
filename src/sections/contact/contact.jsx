@@ -5,10 +5,10 @@ import "./contact.css";
 const Contact = () => {
   return (
     <>
-      <section id="contact">
+      <section id="contact" data-aos="fade-in">
         <h2>Get In Touch</h2>
         <p>Shoot me a message via any of the links below 🚀</p>
-        <div className="container contact__container" data-aos="fade-up">
+        <div className="container contact__container" data-aos="flip-up">
           {Contacts.map((contact) => (
             <a
               key={contact.id}
