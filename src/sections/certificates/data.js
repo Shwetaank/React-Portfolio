@@ -4,7 +4,7 @@ const data = [
     Uni: "AlmaBetter Innoversity",
     Year: "2023-2024*",
     branch: "Master of Science in Computer Science: Software Engineering",
-    link: "https://almabetter.woolf.university/degrees/1181540f-0c68-4a4c-b66b-25fa29555b58",
+    link: "https://woolf.university/id/2099354238",
   },
   {
     id: 2,

@@ -16,6 +16,7 @@
   padding-right: 1rem;
   padding-bottom: 3rem;
   height: fit-content;
+  margin-bottom: 3rem;
 }
 
 /* Styling for individual Swiper slides */
@@ -66,4 +67,5 @@
   background: var(--color-primary);
   width: 1rem;
   height: 1rem;
+  
 }
