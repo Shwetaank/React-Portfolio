@@ -5,6 +5,7 @@ import Img4 from "../../assets/Cert/Node.js.png";
 import Img5 from "../../assets/Cert/JavaScript Programming.png";
 import Img6 from "../../assets/Cert/60 HTML CSS JS projects - HTML5, CSS3 and vanilla JavaScript.jpg";
 import Img7 from "../../assets/Cert/JavaScript (Basic) Certificate.png";
+import Img8 from "../../assets/Cert/JavaScript (Intermediate) Certificate.png";
 
 const data1 = [
   {
@@ -18,7 +19,7 @@ const data1 = [
     id: 2,
     Img: Img2,
     title: "Design & Analysis of Algorithms",
-    desc: "💡 Navigated algorithmic design intricacies, honing skills to craft optimized solutions. Fostered a strategic mindset for tech innovation. Analyzed performance and conceptualized algorithms for efficient problem-solving.",
+    desc: "💡 Navigated algorithmic design intricacies, honing skills for optimized solutions. Fostered strategic mindset for tech innovation. Analyzed performance and conceptualized algorithms for efficient problem-solving.",
     link: "https://certificates.almabetter.com/en/verify/22045576347910",
   },
   {
@@ -54,9 +55,15 @@ const data1 = [
     Img: Img7,
     title: "JavaScript (Basic) Certificate",
     desc: "📜 Verify proficiency in basic JavaScript concepts and syntax. Signifies understanding of fundamental programming principles. Able to write and comprehend basic JavaScript code, laying a solid foundation for further learning and development.",
-    link: "https://www.hackerrank.com/certificates/b5994e9eb865"
-  }
+    link: "https://www.hackerrank.com/certificates/b5994e9eb865",
+  },
+  {
+    id: 8,
+    Img: Img8,
+    title: "JavaScript (Intermediate) Certificate",
+    desc: "🎓 Demonstrates proficiency in intermediate-level JavaScript concepts. Signifies mastery of advanced topics such as Design Patterns, Memory Management, Concurrency Model, and Event Loops, among others. Validates ability to solve complex problems and develop efficient JavaScript applications.",
+    link: "https://www.hackerrank.com/certificates/776dc63de26e",
+  },
 ];
 
 export default data1;
-

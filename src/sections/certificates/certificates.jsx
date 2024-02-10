@@ -84,6 +84,8 @@ const Certificates = () => {
                   data-aos="flip-down"
                 />
                 <h5>{item.title}</h5>
+                {/* Horizontal line */}
+                <hr className="portfolio__project-hr" />
                 <p>{item.desc}</p>
                 <a
                   href={item.link}
