@@ -1,0 +1,33 @@
+h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.Details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.blog_portrait {
+  width: fit-content;
+  height: fit-content;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  border: 1rem solid var(--color-black);
+  transition: var(--transition);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.blog_portrait:hover {
+  border-width: 0;
+}
+.detail right > p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
