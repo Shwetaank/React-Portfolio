@@ -80,7 +80,6 @@ If you'd like to contribute to this project, please follow these guidelines:
 ## Contact
 If you have any questions or feedback, feel free to contact me:
 - Email: spmorey87@gmail.com
-- twitter: @Spmorey87G
 
 ## Conclusion
 The portfolio website project provided an opportunity to showcase web development skills and create an online presence to attract potential clients or employers. It served as a valuable learning experience and a platform for personal branding and networking within the industry. 🚀
